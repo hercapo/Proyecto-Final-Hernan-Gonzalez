@@ -1,0 +1,25 @@
+/*Footer*/
+
+@mixin anclas {
+    text-decoration: none;
+    color: $color-fuentes;
+    font-size: 2rem;
+}
+
+.footerAncla {
+    font-size: x-large;
+    text-decoration: none;
+    margin-right: 3rem;
+    
+    
+    
+    
+
+    a {
+        @include anclas;
+        transition: all 0.3s ease;
+        &:hover {
+            color:$color-fuentes-secundario;
+        }
+    }
+}

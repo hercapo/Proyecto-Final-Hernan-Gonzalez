@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+}
+html body {
+  background: url(../img/MegaTron.jpg);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/*menu del menu.html*/
+.cardText {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* GALERIA */
+.introGaleria {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #27a776;
+  margin-bottom: 3rem;
+}
+.introGaleria h2 {
+  color: #070707;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imagenGaleria {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  filter: grayscale(50%);
+}
+.imagenGaleria:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+}
+
+/*HEADER*/
+.encabezado {
+  padding: 1rem 0;
+  height: 10rem;
+}
+.encabezado .tituloPrincipal {
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+}
+.encabezado .tituloPrincipal i {
+  font-size: 4rem;
+  color: #27a776;
+}
+.encabezado .tituloPrincipal h1 {
+  display: inline-block;
+  color: #070707;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  text-align: center;
+}
+.encabezado .tituloPrincipal img {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: x-large;
+  font-weight: 700;
+}
+ul li {
+  margin-right: 3rem;
+}
+ul li a {
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+ul li a:hover {
+  color: rgba(247, 24, 8, 0.6);
+}
+
+/*HERO*/
+/*Index*/
+.hero {
+  background: url(../img/resto.jpg);
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.hero h2 {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #27a776;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hero p {
+  color: rgba(247, 24, 8, 0.6);
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero a {
+  background-color: #27a776;
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.hero a:hover {
+  background-color: #08ac39;
+}
+
+/*Galeria*/
+.heroGaleria {
+  background-image: url(../img/interior-restaurante_1127-3392.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.heroGaleria h2 {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgb(8, 8, 8);
+}
+.heroGaleria h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.heroGaleria h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #27a776;
+  border-radius: 4px;
+  z-index: -1;
+}
+.heroGaleria p {
+  color: #27a776;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.heroGaleria a {
+  background-color: #27a776;
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.heroGaleria a:hover {
+  background-color: #08ac39;
+}
+
+/*hero del menu.index*/
+.heroMenu {
+  background-image: url(../img/spaghetti-with-pesto-and-prawns-served-on-plate.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.heroMenu h2 {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgb(230, 209, 209);
+}
+.heroMenu h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.heroMenu h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #27a776;
+  border-radius: 4px;
+  z-index: -1;
+}
+.heroMenu p {
+  color: rgb(230, 209, 209);
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.heroMenu a {
+  background-color: #27a776;
+  text-decoration: none;
+  color: #070707;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.heroMenu a:hover {
+  background-color: #08ac39;
+}
+
+@media (max-width: 767px) {
+  .imagenGaleria {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal {
+    display: none;
+  }
+  .introGaleria {
+    display: none;
+  }
+}
+/*Footer*/
+.footerAncla {
+  font-size: x-large;
+  text-decoration: none;
+  margin-right: 3rem;
+}
+.footerAncla a {
+  text-decoration: none;
+  color: #070707;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+.footerAncla a:hover {
+  color: rgba(247, 24, 8, 0.6);
+}
+
+/*# sourceMappingURL=estilo.css.map */
