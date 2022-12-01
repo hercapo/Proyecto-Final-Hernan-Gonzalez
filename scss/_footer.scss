@@ -1,5 +1,7 @@
 /*Footer*/
-
+footer{
+    margin-top: 3rem;
+}
 @mixin anclas {
     text-decoration: none;
     color: $color-fuentes;
@@ -19,7 +21,7 @@
         @include anclas;
         transition: all 0.3s ease;
         &:hover {
-            color:$color-fuentes-secundario;
+            color:$color-botones-secundario;
         }
     }
 }

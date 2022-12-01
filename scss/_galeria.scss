@@ -1,24 +1,36 @@
 /* GALERIA */
 
 .introGaleria {
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $color-botones;
+    background:rgba(3, 127, 243, 0.171);
+    color: black; 
+    width: auto;
+    height: auto;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 10px solid $color-botones;
+    
+    
 
     h2 {
+        font-family: 'Roboto', sans-serif;
         color:$color-fuentes;
         font-size: 4rem;
         font-weight: 700;
         text-align: center;
     }
+
+        &:hover {
+            transform: scale(1.03);
+            filter: grayscale(0%);
+        }
+    }
     
-}
 
 
 .imagenGaleria {
+    
     border-radius: 1rem;
     padding: 0.4rem;
     max-width: 100%;

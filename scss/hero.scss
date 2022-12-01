@@ -5,7 +5,7 @@
 
 .hero {
     background: url(../img/resto.jpg);
-    background-size:auto;
+    background-size:cover;
     background-position: center;
     width: 100%;
     height: calc(100vh - 10rem);
@@ -72,13 +72,14 @@
 /*Galeria*/
 
 .heroGaleria {
-    background-image: url(../img/interior-restaurante_1127-3392.webp);
+    background: url(../img/interior-restaurante_1127-3392.webp);
     background-size:cover;
     background-position: center;
     width: 100%;
     height: calc(100vh - 10rem);
     position: relative;
     display: inline-block;
+
 
 
 
@@ -137,19 +138,21 @@
 /*hero del menu.index*/
 
 .heroMenu{
-    background-image: url(../img/spaghetti-with-pesto-and-prawns-served-on-plate.jpg);
-    background-size:cover;
+    background: url(../img/nosotros1.webp);
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: calc(100vh - 10rem);
+    margin-bottom: 3rem;
     position: relative;
     display: inline-block;
 
     h2 {
+        
         margin-bottom: 4rem;
         font-size: 5rem;
         font-weight: 700;
-        color: $color-fuentes-secundario-tres;
+        color: $color-botones-secundario;
         
         
         
@@ -173,7 +176,74 @@
     }
 
     p {
-        color:$color-fuentes-secundario-tres;
+        color:$color-fuentes;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    
+    }
+    a {
+
+        background-color: $color-botones;
+        @include anclas;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-botones-secundario;
+        }
+
+    }
+
+
+}
+
+/*Quienes Somos*/
+
+.heroQuienes {
+    background: url(../img/nosotros\ 2.webp);
+    background-size:cover;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    position: relative;
+    display: inline-block;
+    
+
+
+
+
+    h2 {
+        margin-bottom: 4rem;
+        font-size: 5rem;
+        font-weight: 700;
+        color: $color-fuentes-secundario-dos;
+        
+        
+        
+        span {
+            font-weight: 700;
+            position: relative;
+            padding: 0 5px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 30%;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: $color-botones;
+                border-radius: 4px;
+                z-index: -1;
+            }
+        }
+    }
+
+    p {
+        color:$color-botones;
         margin-bottom: 5rem;
         font-size: 2rem;
         font-weight: 900;
@@ -194,6 +264,73 @@
         }
 
     }
+}
 
 
+/*Reservas*/
+
+
+.heroReservas {
+    background: url(../img/Reservas.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    position: relative;
+    display: inline-block;
+    
+    
+
+
+
+
+    h2 {
+        margin-bottom: 4rem;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-fuentes-secundario-dos;
+        
+        
+        
+        
+        span {
+            font-weight: 700;
+            position: relative;
+            padding: 0 5px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 30%;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: $color-botones;
+                border-radius: 4px;
+                z-index: -1;
+            }
+        }
+    }
+
+    p {
+        color:$color-botones;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        font-weight: 900;
+    
+    }
+    a {
+
+        background-color: $color-botones;
+        @include anclas;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-botones-secundario;
+        }
+
+    }
 }
